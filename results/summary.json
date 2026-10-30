@@ -1,0 +1,24 @@
+{
+  "raw_rows": 541909,
+  "clean_rows": 522504,
+  "missing_customer_rows_retained": 131354,
+  "baskets": 19773,
+  "products": 3900,
+  "train_baskets": 11044,
+  "validation_baskets": 3157,
+  "test_baskets": 5572,
+  "eligible_test_baskets": 5183,
+  "chosen_support": 0.005,
+  "chosen_lift": 1.5,
+  "rules": 10842,
+  "rule_hit_at_5": 0.09839861084314104,
+  "baseline_hit_at_5": 0.020065599073895428,
+  "coverage": 0.901601389156859,
+  "unseen_targets": 340,
+  "difference_ci95": [
+    0.07003665830600038,
+    0.08643642677985723
+  ],
+  "min_date": "2010-12-01 08:26:00",
+  "max_date": "2011-12-09 12:50:00"
+}

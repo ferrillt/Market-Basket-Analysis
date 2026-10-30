@@ -1,0 +1,6 @@
+step,removed_rows
+Missing invoice product or date,0
+Cancellation invoice,9288
+Nonpositive or missing quantity or price,2517
+Nonmerchandise or atypical product code,2379
+Exact duplicate row,5221
