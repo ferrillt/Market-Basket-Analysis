@@ -1,1 +1,6 @@
+pandas
+numpy
+matplotlib
+openpyxl
 mlxtend==0.25.0
+jupyter
