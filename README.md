@@ -84,7 +84,7 @@ Test baskets are not restricted to the 300 candidate products. Unseen targets re
 | [`analysis.py`](analysis.py) | Complete analysis and figure generation |
 | [`notebook/market_basket_analysis.ipynb`](notebook/market_basket_analysis.ipynb) | Notebook that runs the script and displays results |
 | [`data/`](data/) | Original Online Retail workbook |
-| [`results/`](results/) | Figures, cleaning audit, validation grid, rules, predictions, and summary |
+| [`images/`](results/) | Figures, cleaning audit, validation grid, rules, predictions, and summary |
 | [`requirements.txt`](requirements.txt) | Required Python packages |
 | [`environment_versions.json`](environment_versions.json) | Recorded package versions; verify against the environment used for a new run |
 
