@@ -84,7 +84,7 @@ Test baskets are not restricted to the 300 candidate products. Unseen targets re
 | [`analysis.py`](analysis.py) | Complete analysis and figure generation |
 | [`notebook/market_basket_analysis.ipynb`](notebook/market_basket_analysis.ipynb) | Notebook that runs the script and displays results |
 | [`data/`](data/) | Original Online Retail workbook |
-| [`images/`](results/) | Figures, cleaning audit, validation grid, rules, predictions, and summary |
+| [`images/`](images/) | Figures, cleaning audit, validation grid, rules, predictions, and summary |
 | [`requirements.txt`](requirements.txt) | Required Python packages |
 | [`environment_versions.json`](environment_versions.json) | Recorded package versions; verify against the environment used for a new run |
 
@@ -143,12 +143,12 @@ After the analysis finishes, the later display cells can be rerun without rerunn
 
 | File | Purpose |
 |---|---|
-| [`cleaning_audit.csv`](results/cleaning_audit.csv) | Sequential excluded-row counts |
-| [`validation.csv`](results/validation.csv) | Six candidate settings and validation metrics |
-| [`rules.csv`](results/rules.csv) | Final product rules with support, confidence, lift, codes, and names |
-| [`test_predictions.csv`](results/test_predictions.csv) | Hidden targets, recommendations, hits, and coverage by eligible invoice |
-| [`summary.json`](results/summary.json) | Dataset counts, selected settings, and final metrics |
-| [`baskets.pkl`](results/baskets.pkl) | Generated intermediate basket data; not required as an input |
+| [`cleaning_audit.csv`](images/cleaning_audit.csv) | Sequential excluded-row counts |
+| [`validation.csv`](images/validation.csv) | Six candidate settings and validation metrics |
+| [`rules.csv`](images/rules.csv) | Final product rules with support, confidence, lift, codes, and names |
+| [`test_predictions.csv`](images/test_predictions.csv) | Hidden targets, recommendations, hits, and coverage by eligible invoice |
+| [`summary.json`](images/summary.json) | Dataset counts, selected settings, and final metrics |
+| [`baskets.pkl`](images/baskets.pkl) | Generated intermediate basket data; not required as an input |
 
 Five PNG figures summarize monthly invoices, basket sizes, popular products, recommendation performance, and coverage.
 
