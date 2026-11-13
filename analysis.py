@@ -8,7 +8,7 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from mlxtend.frequent_patterns import fpgrowth, association_rules
 ROOT=Path(__file__).resolve().parent
-OUT=ROOT/'results';OUT.mkdir(exist_ok=True)
+OUT=ROOT/'images';OUT.mkdir(exist_ok=True)
 raw=pd.read_excel(ROOT/'data'/'Online Retail.xlsx',dtype={'InvoiceNo':str,'StockCode':str})
 audit=[]
 df=raw.copy()
@@ -79,4 +79,5 @@ plt.figure(figsize=(7,3.5));baskets['size'].clip(upper=100).hist(bins=30,color='
 plt.figure(figsize=(7,3.5));top=counts.head(10);plt.barh([str(names.get(p,p))[:38] for p in top.index][::-1],top.values[::-1],color='#245e91');plt.xlabel('Development baskets containing product');save('03_popular_products.png')
 plt.figure(figsize=(6,3.5));plt.bar(['Association rules','Popular products'],[summary['rule_hit_at_5']*100,summary['baseline_hit_at_5']*100],color=['#245e91','#c17f28']);plt.ylabel('Test hit rate at 5 (%)');save('04_recommendation_performance.png')
 plt.figure(figsize=(6,3.5));plt.bar(['Received recommendations','No rule recommendation'],[ev.covered.sum(),len(ev)-ev.covered.sum()],color=['#245e91','#999999']);plt.ylabel('Eligible test baskets');save('05_recommendation_coverage.png')
+
 
